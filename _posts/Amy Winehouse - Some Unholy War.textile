@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Some Unholy War"
-permalink: some_unholy_war
+permalink: /some_unholy_war
 ---
 <title>{{ page.title }}</title>
 <code><pre>
