@@ -1,29 +1,17 @@
-<html>
-	<head>
-		<!-- 19/10/10 22:12:28 -->
-		<title>Agusti - Bass Tabs</title>
-	</head>
-	<body>
-		<h1>Bass Tab Collection</h1>
-		<ul>
-			<li><a href="Amy Winehouse - Some Unholy War">Amy Winehouse - Some Unholy War</a></li>
-			<li><a href="Deep Purple - Space truckin">Deep Purple - Space truckin'</a></li>
-			<li><a href="Manel - Al mar">Manel - Al mar!</a></li>
-			<li><a href="Queen - Another one bites the dust">Queen - Another one bites the dust</a></li>
-			<li><a href="Queen - Under Pressure">Queen - Under Pressure</a></li>
-			<li><a href="Rage Against The Machine - Without a face">Rage Against The Machine - Without a face</a></li>
-			<li><a href="RHCP - The Adventures of RainDance Maggie">RHCP - The Adventures of RainDance Maggie</a></li>
-			<li><a href="Rolling Stones - Has anybody seen my baby">Rolling Stones - Has anybody seen my baby?</a></li>
-			<li><a href="The Beatles - Day tripper">The Beatles - Day tripper</a></li>
-			<li><a href="The White Stripes - Seven nation army">The White Stripes - Seven nation army</a></li>
-			<!-- <li><a href=""></a></li> -->
-		<ul>
-		<p>dowload at <a href="http://github.com/AgustiBelloc/bass-tabs">github.com/AgustiBelloc/bass-tabs</a></p>
+---
+layout: default
+title: Bass Tab Collection
+---
+<div id="home">
+	<h1>Tabs</h1>
+	<ul class="posts">
+		{% for post in site.posts %}
+		<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
 		<pre><em>
 ++++++++++++++++++++++++PLEASE NOTE++++++++++++++++++++++++
 +  Theese tabs represent the interpretation of the song.  +
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 		</em></pre>
-	</body>
-</html>
-
+</div>
